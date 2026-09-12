@@ -1,0 +1,322 @@
+{
+  "agent": {
+    "n": 207,
+    "escalation": {
+      "accuracy": 0.8937,
+      "precision": 0.4286,
+      "recall": 0.4737,
+      "f1": 0.45,
+      "tp": 9,
+      "fp": 12,
+      "tn": 176,
+      "fn": 10,
+      "escalate_rate": 0.1014,
+      "metric": "escalation"
+    },
+    "intent": {
+      "accuracy": 0.7391,
+      "n": 207,
+      "metric": "intent"
+    },
+    "reply_presence": {
+      "non_escalate_answered": 0.942,
+      "n": 207,
+      "metric": "reply_presence"
+    },
+    "top_intent_confusions": [
+      [
+        "feature_request_feedback",
+        "technical_issue",
+        5
+      ],
+      [
+        "feature_request_feedback",
+        "content_library",
+        5
+      ],
+      [
+        "feature_request_feedback",
+        "device_integration",
+        5
+      ],
+      [
+        "billing_subscription",
+        "account_access",
+        4
+      ],
+      [
+        "device_integration",
+        "technical_issue",
+        3
+      ],
+      [
+        "billing_subscription",
+        "account_admin",
+        3
+      ],
+      [
+        "technical_issue",
+        "device_integration",
+        3
+      ],
+      [
+        "account_access",
+        "device_integration",
+        2
+      ],
+      [
+        "account_admin",
+        "technical_issue",
+        2
+      ],
+      [
+        "closing_acknowledgement",
+        "other_offtopic",
+        2
+      ],
+      [
+        "technical_issue",
+        "content_library",
+        2
+      ],
+      [
+        "account_admin",
+        "account_access",
+        1
+      ]
+    ],
+    "golden_total": 207,
+    "agent_ok": 207,
+    "agent_failed": 0,
+    "judged": 207,
+    "mean_intent_confidence": 0.921,
+    "mean_reply_len": 133.2
+  },
+  "baselines": {
+    "trivial": {
+      "n": 207,
+      "escalation": {
+        "accuracy": 0.9082,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "tn": 188,
+        "fn": 19,
+        "escalate_rate": 0.0,
+        "metric": "escalation"
+      },
+      "intent": {
+        "accuracy": 0.1884,
+        "n": 207,
+        "metric": "intent"
+      },
+      "reply_presence": {
+        "non_escalate_answered": 1.0,
+        "n": 207,
+        "metric": "reply_presence"
+      },
+      "top_intent_confusions": [
+        [
+          "technical_issue",
+          "feature_request_feedback",
+          29
+        ],
+        [
+          "billing_subscription",
+          "feature_request_feedback",
+          27
+        ],
+        [
+          "account_access",
+          "feature_request_feedback",
+          26
+        ],
+        [
+          "content_library",
+          "feature_request_feedback",
+          24
+        ],
+        [
+          "other_offtopic",
+          "feature_request_feedback",
+          22
+        ],
+        [
+          "closing_acknowledgement",
+          "feature_request_feedback",
+          16
+        ],
+        [
+          "account_admin",
+          "feature_request_feedback",
+          12
+        ],
+        [
+          "device_integration",
+          "feature_request_feedback",
+          12
+        ]
+      ]
+    },
+    "simple": {
+      "n": 207,
+      "escalation": {
+        "accuracy": 0.8019,
+        "precision": 0.0769,
+        "recall": 0.1053,
+        "f1": 0.0889,
+        "tp": 2,
+        "fp": 24,
+        "tn": 164,
+        "fn": 17,
+        "escalate_rate": 0.1256,
+        "metric": "escalation"
+      },
+      "intent": {
+        "accuracy": 0.0,
+        "n": 207,
+        "metric": "intent"
+      },
+      "reply_presence": {
+        "non_escalate_answered": 0.8841,
+        "n": 207,
+        "metric": "reply_presence"
+      },
+      "top_intent_confusions": [
+        [
+          "account_access",
+          "passcode_forgotten",
+          8
+        ],
+        [
+          "account_access",
+          "compromised_card",
+          6
+        ],
+        [
+          "device_integration",
+          "lost_or_stolen_phone",
+          5
+        ],
+        [
+          "technical_issue",
+          "contactless_not_working",
+          5
+        ],
+        [
+          "content_library",
+          "balance_not_updated_after_bank_transfer",
+          4
+        ],
+        [
+          "account_access",
+          "unable_to_verify_identity",
+          3
+        ],
+        [
+          "content_library",
+          "card_payment_not_recognised",
+          3
+        ],
+        [
+          "feature_request_feedback",
+          "edit_personal_details",
+          3
+        ],
+        [
+          "feature_request_feedback",
+          "card_arrival",
+          3
+        ],
+        [
+          "billing_subscription",
+          "extra_charge_on_statement",
+          3
+        ],
+        [
+          "technical_issue",
+          "top_up_reverted",
+          3
+        ],
+        [
+          "feature_request_feedback",
+          "top_up_reverted",
+          3
+        ]
+      ]
+    }
+  },
+  "judge": {
+    "n": 207,
+    "helpfulness": {
+      "mean": 3.984,
+      "n": 186
+    },
+    "voice": {
+      "mean": 4.866,
+      "n": 186
+    },
+    "groundedness": {
+      "mean": 4.823,
+      "n": 186
+    },
+    "escalation_decision": {
+      "mean": 4.787,
+      "n": 207
+    },
+    "overall": {
+      "mean": 4.528,
+      "n": 207
+    },
+    "pct_overall_ge4": 0.9179,
+    "low_scoring_notes": [
+      [
+        2.0,
+        "The reply is generic, offers no actionable steps for an unauthorized charge, and fails to address the core issue of potential fraud or mistaken subscription."
+      ],
+      [
+        1.0,
+        "Escalation based on keyword 'sue' is incorrect — no such keyword appears in the customer message; this is a routine account access issue, not legal abuse or compromise."
+      ],
+      [
+        1.0,
+        "Escalation was incorrectly triggered by the keyword 'sue' which does not appear in the customer message; the query is a routine question about response time and should not have been escalated."
+      ],
+      [
+        1.0,
+        "Escalation was incorrect — the customer expressed frustration about a feature removal, not abuse or legal issues; this is a routine feature request that should have been handled with empathy, not escalated."
+      ],
+      [
+        1.0,
+        "Escalation based on keyword 'sue' is incorrect — no legal threat or abuse present; this is a routine content availability issue."
+      ],
+      [
+        3.3,
+        "The reply is a near-verbatim copy of a historical resolution about album art behavior, but it misapplies it to a feature request about full-screen album art with a button — making it irrelevant and unhelpful despite being grounded in past replies."
+      ],
+      [
+        1.0,
+        "Escalation based on keyword 'sue' is incorrect — no legal threat or abuse present; this is a routine content library issue requiring troubleshooting, not escalation."
+      ],
+      [
+        1.0,
+        "Escalation was incorrect — the customer expressed frustration but used no abusive language or legally pre-flagged content; this is a routine service complaint, not grounds for escalation."
+      ]
+    ]
+  },
+  "agreement": {
+    "n": 29,
+    "escalation_decision_agreement_with_gold": 0.1724,
+    "escalation_judge_vs_human": {
+      "n": 29,
+      "exact_match": 0.931,
+      "mean_abs_diff": 0.138,
+      "kappa": -0.036
+    },
+    "helpfulness_exact_match": 0.25,
+    "helpfulness_mean_abs_diff": 0.792,
+    "helpfulness_binarized_kappa": 0.5
+  }
+}

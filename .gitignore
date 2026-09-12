@@ -1,0 +1,15 @@
+# secrets — never commit
+.env
+
+# raw datasets (847 MB) — reproducible via README data table instructions
+data/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+
+# scratch / logs
+*.log
+/tmp/
+session-*.md

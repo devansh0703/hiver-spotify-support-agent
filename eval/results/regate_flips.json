@@ -1,0 +1,94 @@
+{
+  "dropped": [
+    {
+      "id": "1982945",
+      "old": true,
+      "new": false,
+      "old_reason": "escalation keyword: sue",
+      "new_rule": "llm",
+      "reason": ""
+    },
+    {
+      "id": "2866588",
+      "old": true,
+      "new": false,
+      "old_reason": "escalation keyword: sue",
+      "new_rule": "llm",
+      "reason": ""
+    },
+    {
+      "id": "2195260",
+      "old": true,
+      "new": false,
+      "old_reason": "escalation keyword: sue",
+      "new_rule": "llm",
+      "reason": ""
+    },
+    {
+      "id": "1056939",
+      "old": true,
+      "new": false,
+      "old_reason": "escalation keyword: sue",
+      "new_rule": "llm",
+      "reason": ""
+    },
+    {
+      "id": "58933",
+      "old": true,
+      "new": false,
+      "old_reason": "escalation keyword: sue",
+      "new_rule": "llm",
+      "reason": ""
+    }
+  ],
+  "added": [
+    {
+      "id": "1208834",
+      "old": false,
+      "new": true,
+      "old_reason": "",
+      "new_rule": "billing_dispute",
+      "reason": "billing dispute or refund request on a paid plan"
+    },
+    {
+      "id": "2037114",
+      "old": false,
+      "new": true,
+      "old_reason": "",
+      "new_rule": "billing_dispute",
+      "reason": "billing dispute or refund request on a paid plan"
+    },
+    {
+      "id": "1809146",
+      "old": false,
+      "new": true,
+      "old_reason": "",
+      "new_rule": "billing_dispute",
+      "reason": "billing dispute or refund request on a paid plan"
+    },
+    {
+      "id": "450868",
+      "old": false,
+      "new": true,
+      "old_reason": "",
+      "new_rule": "billing_dispute",
+      "reason": "billing dispute or refund request on a paid plan"
+    },
+    {
+      "id": "910860",
+      "old": false,
+      "new": true,
+      "old_reason": "",
+      "new_rule": "billing_dispute",
+      "reason": "billing dispute or refund request on a paid plan"
+    },
+    {
+      "id": "2077608",
+      "old": false,
+      "new": true,
+      "old_reason": "",
+      "new_rule": "billing_dispute",
+      "reason": "billing dispute or refund request on a paid plan"
+    }
+  ]
+}
