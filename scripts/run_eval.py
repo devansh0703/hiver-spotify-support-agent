@@ -361,8 +361,8 @@ def main() -> None:
 
     sel = _sample_golden(args.limit)
 
-    ws.wait_until_ready(120)
     if not args.only_report:
+        ws.wait_until_ready(120)  # only phases that hit Weaviate need it
         if not args.only_judge:
             run_agent(sel, args.workers)
             run_baselines(sel)
